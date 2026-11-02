@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.pynexia.week2.contacts.AppFlowTest" tests="4" failures="0" errors="0" skipped="0" time="25.757" timestamp="2026-11-02T00:09:43" hostname="localhost">
+  <properties>
+    <property name="device" value="Pixel_8(AVD) - 17" />
+    <property name="flavor" value="" />
+    <property name="project" value=":contacts" />
+  </properties>
+  <testcase name="viewsContactAndBuildsDialIntent" classname="com.pynexia.week2.contacts.AppFlowTest" time="5.812" />
+  <testcase name="createsEditsSearchesAndDeletes" classname="com.pynexia.week2.contacts.AppFlowTest" time="14.461" />
+  <testcase name="preservesEditorDraftOnRecreation" classname="com.pynexia.week2.contacts.AppFlowTest" time="3.031" />
+  <testcase name="crudPersistsAcrossReopenAndUsesStableIds" classname="com.pynexia.week2.contacts.DatabaseTest" time="0.371" />
+</testsuite>

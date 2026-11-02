@@ -1,0 +1,14 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="#F4F5EE">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingHorizontal="24dp">
+<TextView style="@style/Eyebrow" android:text="@string/eyebrow"/><TextView style="@style/Heading" android:text="@string/title"/><TextView style="@style/Muted" android:text="@string/subtitle"/>
+<EditText android:id="@+id/search" style="@style/Input" android:inputType="text" android:singleLine="true" android:hint="@string/search_hint" android:contentDescription="@string/search_hint" android:importantForAutofill="no"/>
+<RadioGroup android:id="@+id/filters" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:checkedButton="@id/all">
+<RadioButton android:id="@+id/all" android:layout_width="wrap_content" android:layout_height="48dp" android:text="@string/all"/><RadioButton android:id="@+id/open" android:layout_width="wrap_content" android:layout_height="48dp" android:text="@string/open"/><RadioButton android:id="@+id/completed" android:layout_width="wrap_content" android:layout_height="48dp" android:text="@string/completed"/></RadioGroup>
+<TextView android:id="@+id/stats" style="@style/Eyebrow" android:accessibilityLiveRegion="polite"/>
+</LinearLayout>
+<FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+<androidx.recyclerview.widget.RecyclerView android:id="@+id/list" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="24dp" android:clipToPadding="false" android:paddingBottom="10dp"/>
+<LinearLayout android:id="@+id/empty" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="center" android:orientation="vertical" android:padding="32dp" android:visibility="gone"><TextView android:id="@+id/empty_title" style="@style/Text" android:textSize="22sp" android:gravity="center" android:text="@string/empty_title"/><TextView android:id="@+id/empty_body" style="@style/Muted" android:gravity="center" android:layout_marginTop="12dp" android:text="@string/empty_body"/></LinearLayout>
+</FrameLayout>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingHorizontal="24dp" android:paddingBottom="12dp"><Button android:id="@+id/add" style="@style/Button" android:text="@string/add"/><TextView style="@style/Muted" android:textSize="11sp" android:layout_marginBottom="0dp" android:gravity="center" android:text="@string/local_only"/></LinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+{
+  "name": "Contact App",
+  "unit": 4,
+  "device": 4,
+  "lint_errors": 0,
+  "lint_warnings": 18,
+  "testing": "Name/phone/email validation and literal search, SQLite CRUD/reopen, UI add/edit/delete, editor recreation, full details and intercepted ACTION_DIAL Intent."
+}

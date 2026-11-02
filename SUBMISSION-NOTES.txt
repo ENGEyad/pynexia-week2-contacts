@@ -1,0 +1,11 @@
+Native Android Contact App implemented with Java and XML. Maintain a private contact directory with create, view, edit, delete and search, a custom RecyclerView adapter and local SQLite storage.
+
+A contact has a required name and phone, with optional email. Names allow 1-120 characters; phone numbers need 3-20 digits with basic formatting, up to 40 characters. SQLite persists entries. A custom ListAdapter displays names and phones in alphabetical order. Search matches name, phone or email without treating SQL wildcards specially. Selecting a row shows full contact details. Open dialer uses ACTION_DIAL with the selected number and handles missing dialer apps. The app requests no contacts or call permission.
+
+Run: open the source folder in Android Studio, sync Gradle, and run contacts on Android 8.0/API 26 or later (compile/target SDK 35).
+
+Validation: 4 JVM tests and 4 device tests passed on a Pixel 8 emulator, Android 17/API 37. Lint: zero errors; 18 warnings documented without suppression.
+
+Does not read or modify the system address book. No automatic calls, cloud sync or encrypted storage. Clearing app data/uninstalling removes contacts. Phone validation is a basic input check, not number verification.
+
+Hosted URL: project showcase with actual screenshots and downloads, not a browser emulator. The ZIP contains source, Gradle wrapper, debug APK, screenshots, verification and a bilingual PDF report.
